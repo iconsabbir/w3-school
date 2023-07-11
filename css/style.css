@@ -1,0 +1,644 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-bar{
+    text-align: center;
+    padding: 13px 18px;
+    overflow: hidden;
+    background-color:#333;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    padding: 14px;
+    font-size: 20px;
+    color: #f2f2f2;
+    float: left;
+    font-weight: 500;
+
+}
+.nav-bar a.active{
+    background-color: #f54263;
+    color: white;
+    
+}
+.nav-bar a:hover{
+    background-color: #ddd;
+    color: black;
+    
+
+}
+.nav-bar a.active:hover{
+    background-color: #f54263;
+    color: white;
+}
+.menu-bar{
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+ 
+    
+}
+
+.bar1{
+    width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  margin-left: 1000px;
+  transition: 0.5s;
+
+  
+
+}
+.bar2{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-left: 1000px;
+    transition: 0.5s;
+    
+}
+.bar3{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    margin-left:1000px;
+    transition: 0.5s;
+    
+}
+.change .bar1{
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+/* car-section  */
+
+
+
+.car-section{
+   float: left;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    width: 35%;
+    height: 300px;
+  
+}
+
+
+.car-section button{
+    display: block;
+    cursor: pointer;
+    background-color: inherit;
+    color: black;
+    width: 100%;
+    padding:22px 16px ;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.car-section button:hover{
+    background-color: #ddd;
+}
+.car-section button.active{
+    background-color: #ccc;
+}
+
+
+.car-detels{
+    margin-left: 350px;
+   margin-top: 50px;
+   
+}
+.car-section{
+    
+}
+
+.carcontent{
+    
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    width: 78%;
+    
+    height: 300px;
+}
+.carcontent h1{
+    font-size: 32px;
+    text-transform: capitalize;
+   margin-top: 20px;
+   text-align: center;
+    
+    
+}
+.carcontent h4{
+   text-align: center;
+}
+
+
+
+
+
+
+
+.flex-nav{
+    position: relative;
+   margin: auto;
+   margin-top: 80px;
+   margin-bottom: 80px;
+   border: 2px solid #ccc;
+   width: 65%;
+}
+.caraboutmenu{
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: absolute;
+    background-color: black;
+    
+
+}
+.caraboutmenu a{
+    text-decoration: none;
+    padding: 6px 10px 6px 18px;
+    font-size: 28px;
+    color:  #818181;
+    display: block;
+}
+.gta-super-car{
+    text-align: start;
+    margin-left: 160px;
+    font-size: 25px;
+    padding: 60px 10px;
+}
+.gta-super-car p{
+    width: 70%;
+}
+.gta-super-car h3{
+    width: 75%;
+
+}
+.gta-super-car h2{
+    width: 70%;
+}
+
+
+
+
+.gta{
+    cursor: pointer;
+   
+}
+
+.car{
+    width: 34px;
+    height: 6px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    
+    margin-right: 38px;
+    background-color: #333;
+    
+    
+}
+
+
+
+.gta.active .car:nth-child(2){
+    opacity: 0;
+
+}
+.gta.active .car:nth-child(1){
+    transform: translateY(11px) rotate(-45deg);
+
+}
+.gta.active .car:nth-child(3){
+    transform: translateY(-11px) rotate(45deg);
+    
+}
+.caraboutmenu{
+  left: -4%;
+  top: 0;
+  gap: 0;
+  flex-direction: column;
+  background-color: #333;
+  transition: 0.7s ease-in-out;
+  opacity: 0;
+}
+.caraboutmenu.active{
+    left: 0;
+    opacity: 1;
+}
+.caraboutmenu a:hover{
+   color: #ccc;
+    
+
+}
+
+
+.boder-1{
+    border: 2px solid #333;
+    width: 84%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+.car-brand{
+    margin-left: 100px;
+}
+
+.car-brand h1{
+    padding: 10px 0 20px 0;
+    font-size: 40px;
+    color: #f56942bc;
+}
+.car-brand p{
+   
+    width: 70%;
+    text-transform: capitalize;
+    
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+    
+}
+.boder-1{
+    display: flex;
+    border: 1px solid #333;
+    
+}
+.hoverable-nav{
+    overflow: hidden;
+    width: 20%;
+}
+
+.hoverable-nav a{
+    display: block;
+    width: 180px;
+    margin-top: 10px;
+    transition: 0.6s;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    margin-left: -120px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+
+.hoverable-nav a:hover{
+    
+   margin-left: 0;
+  
+}
+.audi{
+    
+    background-color: #04AA6D;
+}
+.toyota{
+    background-color: #f54263;
+    
+    
+}
+.honda{
+    background-color: aqua;
+}
+.ferrari{
+    background-color: burlywood;
+}
+.tesla{
+    background-color: darkgrey;
+}
+.nissan{
+    background-color: darkorchid;
+}
+
+
+/* hoverable-nav*/
+
+
+
+
+
+/* section2 */
+
+.section2{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    color: blueviolet;
+    
+}
+
+.section2 h1 span{
+    color: #f54263;
+}
+section2 h1 span:nth-child(1){
+    color: #d40e0ebc;
+}
+.section2 h1 span:nth-child(2){
+    color: aqua;
+}
+.section2 h1 span:nth-child(3){
+    color:#4263f5bc;
+}
+.section2 h1 span:nth-child(4){
+    color: #dc9f1b;
+}
+.section2 h1 span:nth-child(5){
+    color: #aa0404;
+}
+.section2 h1 span:nth-child(6){
+    color: #8c04aa;
+}
+
+
+
+
+
+.section2-navbar{
+    overflow: hidden;
+    background-color: #333;
+    
+    margin-bottom: 30px;
+}
+.section2-navbar a{
+   float: left;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+.sub-navbar{
+    overflow: hidden;
+    float: left;
+}
+
+.about-section{
+    margin: 0;
+    border: 0;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    color: white;
+    font-size: 16px;
+    
+    
+
+}
+
+
+.subnav-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+    transition: 0.4s;
+    
+}
+.subnav-content a{
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+
+
+.section2-navbar a:hover,.sub-navbar:hover .about-section{
+   background-color: red;
+}
+
+.subnav-content a:hover{
+    background-color: #eee;
+    color: black;
+}
+
+.sub-navbar:hover .subnav-content{
+    display: block;
+}
+
+/* Subnav bar end */
+
+
+.stky-iconbar{
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 150px;
+}
+.icon-boder{
+   
+   margin-top: 80px;
+   
+   
+   
+}
+.icon-socelmedia{
+    width: 6%;
+    text-align: center;
+    float: left;
+    display: block;
+    border: 1px solid #333;
+    height: 302px;
+    
+    
+   
+}
+.icon-socelmedia a{
+  display: block;
+    font-size: 30px;
+    padding: 16px;
+    height: 50px;
+    border: none;
+   
+    
+    
+}
+.facbook{
+    background: #3B5998;
+    color: white;
+    
+}
+.twitter{
+     background: #55ACEE;
+    color: white;}
+.linkdin{
+    background: #007bb5;
+    color: white;
+    
+   
+    
+}
+.insta{
+    background: #bb0000;
+    color: white;
+}
+.discord{
+    background: #dd4b39;
+  color: white;
+}
+.whatsapp{
+    background: #04AA6D;
+  color: white;
+}
+
+.socile-conten{
+    border-bottom: 1px solid #333;
+    overflow-y: auto;
+    height: 302px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-right: 1px solid #333;
+   border-top: 1px solid #333;
+}
+.socile-conten h1{
+    text-align: center;
+    
+}
+.socile-conten p{
+    width: 90%;
+    
+    font-size: 30px;
+    padding: 20px;
+}
+.icon-socelmedia a:hover{
+    background-color: #000;
+}
+
+/* stky-iconbar end */
+
+
+
+
+.timeline{
+    position: relative;
+    margin: 0 auto;
+    
+    width: 88%;
+    background-color:#333 ;
+    overflow-y: auto;
+    border-bottom: 1px solid #110d0d;
+    height: 500px;
+    border-top: 0;
+    border-bottom: 30px;
+    padding: 20px;
+    margin-bottom: 100px;
+    
+
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    height: 150vh;
+}
+
+.yeardetels{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+
+}
+.yeardetels::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -18px;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+
+
+}
+.left{
+    left: 0;
+}
+.right{
+    right: -50%;
+}
+
+.left::before{
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    right: 30px;
+    z-index: 1;
+    border: medium solid #eee;
+    border-width: 10px 0 10px 10x;
+    border-color: transparent transparent transparent #eee;
+}
+
+.right::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    left: 10px;
+    z-index: 1;
+    border: medium solid #eee;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent transparent transparent #eee;
+}
+
+.right::after{
+    left:-16px ; 
+}
+
+
+
+
+
+.content{
+    padding: 20px 30px;
+    position: relative;
+    background-color: #eee;
+    border-radius: 7px;
+    
+    
+}
+.content h2{
+    text-align: center;
+}
+.content p{
+    width: 80%;
+    padding: 30px;
+    
+}
+

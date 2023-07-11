@@ -1,0 +1,26 @@
+@media(max-width:991px){
+
+    .nav-bar a{
+    display: none;
+}
+
+.nav-bar a.active{
+    display: block;
+    
+}
+
+
+.menu-bar{
+    
+    display: block;
+}
+
+.bar1,.bar2,.bar3{
+    margin-left: 640px;
+    
+}
+
+
+
+
+}
